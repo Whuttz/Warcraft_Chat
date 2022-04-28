@@ -1,0 +1,107 @@
+* {
+    margin:0;
+    padding:0;
+    cursor: url('../img/cursor.png'), auto;	
+}
+
+@font-face {
+    font-family: fritz;
+    src: url('../font/friz.otf');
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* code trouvé sur Internet */
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.box {
+    display: grid;
+    width: 600px;
+    height: 500px;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-columns: repeat(auto-fill);
+    background-color: rgba(206, 155, 102, 0.5);
+}
+
+.members-head {
+    font-family: fritz;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    padding-top: 25px;
+    font-weight: bold;
+}
+
+.members {
+    font-family: fritz;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 8;
+    padding: 5px;
+    border: 1px black solid;
+}
+
+.messages-head {
+    font-family: fritz;
+    grid-column-start: 4;
+    grid-row-start: 1;
+    padding-top: 25px;
+    font-weight: bold;
+}
+
+.message-box {
+    font-family: fritz;
+    grid-column-start: 4;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 8;
+    padding: 5px;
+    border: 1px black solid;
+    border-left: none;
+    border-right: none;
+    overflow-y: scroll;
+    overflow-x: none;
+}
+
+textarea {
+    font-family: fritz;
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 9;
+    background-color: rgba(206, 155, 102, 0.3);
+    font-size: 18px;
+}
+
+a {
+    padding-top: 10px;
+    font-family: fritz;
+    grid-column-start: 5;
+    grid-row-start: 10;
+    color: black;
+}
+
+a:hover,a:visited { 
+    padding-top: 10px;
+    font-family: fritz;
+    grid-column-start: 5;
+    grid-row-start: 10;
+    color: black;
+}
+
+.sky {
+    position:fixed;
+    z-index: 0;
+    background: url('../img/Sky.png') 0 0;
+    width: 1983px;
+    height: 307px;
+}

@@ -1,0 +1,109 @@
+* {
+    margin:0;
+    padding:0;
+    cursor: url('../img/cursor.png'), auto;	
+}
+
+@font-face {
+    font-family: fritz;
+    src: url('../font/friz.otf');
+}
+
+body {
+    height: 100vh;
+    background-image: url('../img/FrozenThrone.jpg');
+    background-repeat: no-repeat;
+    background-color: black;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+}
+
+form {
+    position: absolute;
+    display: block;
+    width: 580px;
+    height: 190px;
+    left: 50%;
+    top: 50%;
+    /* code trouvé sur Internet */
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-image: url('../img/MenuBox.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    text-align: center;
+}
+
+input[type=text] {
+    font-family: fritz;
+    background-color: rgb(9, 11, 3);
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+}
+
+input[type=password] {
+    font-family: fritz;
+    background-color: rgb(9, 11, 3);
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+}
+
+#api-message {
+    font-family: fritz;
+    padding-top: 50px;
+    font-size: 25;
+    font-size: bold;
+    color: white;
+}
+
+a {
+    font-family: fritz;
+    padding-top: 50px;
+    font-size: 25;
+    font-size: bold;
+    color: white;
+}
+
+a:hover,a:visited { 
+    font-family: fritz;
+    padding-top: 50px;
+    font-size: 25;
+    font-size: bold;
+    color: white;
+}
+
+.bouton-login {
+    font-family: fritz;
+    text-align: center;
+    padding-top: 26px;
+}
+
+button {
+    font-family: fritz;
+    background-color: rgb(100, 2, 2);
+    border: none;
+    font-size: 18px;
+    padding-left: 26px;
+    padding-right: 25px;
+    color: rgb(255,227,14);
+}
+
+.snow {
+	position:absolute;
+	width:2px;
+	height:2px;
+	background-color:#fff;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.nova {
+    position:absolute;
+    background: url('../img/BlueNova.gif') 0 0;
+    width: 200px;
+    height: 200px;
+}
